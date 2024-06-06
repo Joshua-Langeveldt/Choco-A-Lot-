@@ -234,6 +234,9 @@ margin-bottom: 5rem;
     margin-bottom: -2rem;
 }
 
+.icon {
+    background-color: transparent;
+}
 
 
 .usContainer {
@@ -347,4 +350,159 @@ margin-bottom: -6rem;
     }
 
 
+}
+
+/*Home Page Finishes Here*/
+/* .......................................................................................................................*/
+
+/* #aboutPage{
+        background-image: url('https://joshua-langeveldt.github.io/images/images/Choco-A-Lot/bg-img.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+    height: 50rem;
+    
+} */
+
+ #aboutPage {
+    position: relative;
+    height: 50rem;
+}
+ #aboutPage::before {
+    content: "";
+    background-image: url('https://joshua-langeveldt.github.io/images/images/Choco-A-Lot/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 1; /* Ensure the overlay is below the text */
+}
+
+ #aboutPage .about-p, #aboutPage h2 {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    font-weight: bolder;
+}
+.about-main{
+
+    text-align: center;
+
+}
+
+
+.about-p{
+font-family:  "JetBrains Mono", monospace;
+    margin: 9px 300px;
+    padding: 25px;
+}
+
+.about-header {
+    font-family: "JetBrains Mono", monospace;
+    font-style: normal;
+   font-size: 2rem;
+  font-weight: bolder;
+    padding: 70px;
+    z-index: 2;
+}
+
+/*Testimonial Styling*/
+
+.card-deck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    width: 50%;
+
+    transition: all .5s;
+    
+    &:hover {
+        transform: scale(1.2);
+        color: var(--alternative);
+
+    }
+    
+}
+
+.ardcay {
+    width: 500px;
+    height: 350px;
+    border: 3px solid var(--mainBg);
+    border-radius: 30px;
+    box-shadow: .3vw .3vw .3vw var(--mainBg), .6vw 1vw .2vw var(--secondary);
+    margin-left: 23rem;
+
+
+}
+
+.ardcay-body {
+    padding: 20px;
+}
+
+.ardcay-title {
+    font-size: 1.5em;
+    color: var(--secondary);
+    font-family: "Jockey One", sans-serif;
+	text-align:center;
+	margin-top: 0px;
+
+
+}
+
+.ardcay-text {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-family: "Jockey One", sans-serif;
+    width:100%;
+	text-align:center;
+    padding-left: 0px;
+    margin-left: 0%;
+  
+}
+
+#ardcay-style1{
+
+    margin-left: -18rem;
+}
+
+#ardcay-style2{
+
+    margin-left: -18rem;
+}
+
+#ardcay-style3{
+
+    margin-left: -18rem;
+}
+
+#ardcay-style4{
+
+    margin-left: -18rem;
+}
+
+#ardcay-style5{
+
+    margin-left: -18rem;
+}
+
+/*Testimonial-Image*/
+
+img[alt='Image1'] {
+
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 2px solid #FFEBB2;
+
+    &:hover {
+        transform: scale(1.2);
+        height: 100px;
+        width:100px;
+        margin: 8px;
+    }
 }
